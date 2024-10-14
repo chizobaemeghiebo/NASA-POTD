@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Nasa POTD</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-screen">
+    <div class="container px-3 mx-auto max-w-5xl overflow-hidden">
+      <h1 class="text-center font-bold text-3xl my-8">NASA Picture Of The Day</h1>
+      <div class="flex flex-col justify-items-center gap-8 bg-white mx-auto p-8 max-w-xs shadow-md shadow-rose-600">
+        <input type="date" name="" id="" class="border-2 border-rose-600 rounded w-full p-2" />
+        <button class="text-white bg-rose-600 p-2 text-center rounded" type="submit">Get media</button>
+      </div>
+
+      <div class="media flex flex-col mt-12 w-[80%] max-w-2xl rounded overflow-hidden shadow-lg mx-auto hidden p-4">
+        <div class="font-bold text-xl mb-2">
+          <h2 class="text-center font-bold text-2xl"></h2>
+        </div>
+        <div><iframe class="iframe w-full hidden" src="" frameborder="0"></iframe></div>
+        <img src="" alt="" class="main-img" />
+        <div class="mt-4">
+          <p class="mix-blend-color-dodge text-justify"></p>
+        </div>
+        <div class="pt-4">
+          <span class="inline-block bg-gray-200 rounded-sm px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 date"></span>
+          <span class="inline-block bg-gray-200 rounded-sm px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 copyright"></span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
